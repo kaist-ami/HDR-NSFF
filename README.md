@@ -1,4 +1,4 @@
-# HDR-NSFF: High Dynamic Range Neural Scene Flow Fields
+# HDR-NSFF (ICLR 2026)
 ### [Project Page](https://shin-dong-yeon.github.io/HDR-NSFF/) | [Paper](https://arxiv.org/abs/2603.08313)
 
 This is the official repository for **HDR-NSFF**, accepted at **ICLR 2026**.
