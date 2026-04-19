@@ -1,0 +1,51 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Model checkpoints (large files stored in /node_data)
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# Exception: small LPIPS perceptual weights committed to repo
+!nsff_exp/models/weights/**/*.pth
+
+# Experiment tracking
+wandb/
+runs/
+*.tfevents.*
+nsff_exp/logs/*
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Experiment configs (all except representative public configs in config_pub/)
+nsff_exp/configs_arxiv/
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Data and local symlinks (point to /node_data or /local_data; not portable)
+data/*
+nsff_exp/logs
+nsff_exp/Depth-Anything-V2/metric_depth/checkpoints
+nsff_exp/Depth-Anything-V2/metric_depth/data
+
+# dino-tracker: upstream sample dataset and runtime artifacts
+nsff_scripts/dino-tracker/dataset/
+nsff_scripts/dino-tracker/assets/
+
+.claude
+CLAUDE.md

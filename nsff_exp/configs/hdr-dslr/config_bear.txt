@@ -1,0 +1,54 @@
+expname = bear
+
+basedir = ./logs/hdr-dslr
+datadir = ../data/hdr-dslr/bear/dense
+
+dataset_type = llff
+
+factor = 2
+
+N_rand = 1024
+N_samples = 128
+N_importance = 0
+netwidth = 256
+
+use_viewdirs = True
+raw_noise_std = 1e0
+no_ndc = False
+lindisp = False
+
+spherify = False
+decay_depth_w = True
+decay_optical_flow_w = True
+use_motion_mask = True
+num_extra_sample = 512
+chain_sf = True
+
+w_depth = 0.04
+w_optical_flow = 0.02
+w_sm = 0.1
+w_sf_reg = 0.1
+w_cycle = 1.0
+
+start_frame = 0
+end_frame = 36
+step_frame = 1
+decay_iteration = 30
+
+use_tone_mapping=True
+use_initialize=False
+tone_mapping=piece_wise
+crf_start_step=0
+
+use_sat_mask=True
+ref_idx=0
+
+i_weights=10000
+N_iters=250001
+disp_model=depth-anything
+
+semantic_flow=True
+
+final_height=480
+
+use_render_l1=True

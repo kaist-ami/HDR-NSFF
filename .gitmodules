@@ -1,0 +1,3 @@
+[submodule "nsff_exp/Difix3D"]
+	path = nsff_exp/Difix3D
+	url = https://github.com/nv-tlabs/Difix3D.git
